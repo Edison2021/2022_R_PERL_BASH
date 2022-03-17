@@ -1,6 +1,7 @@
 #Plots a presence absence heatmap for a given set of genes given a tree
 #usage Rscript tree_APheatmap.R -t N13.nwk  -g total.1.matrix.txt.tr.txt -s gene.list -o test.pdf
 # adjust the ggtree::vexpand to control margin 
+# use csvtk convert format
 library(argparse)
 library(ggtree)
 library(ggplot2)
