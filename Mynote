@@ -9,4 +9,5 @@ gcc-7 --version
 sudo apt-get install gfortran-7
 this works on ubutu16
 
- awk '{print > $1".txt"}' file1 to print every row to diffrent files based on the first colum.
+awk '{print > $1".txt"}' file1 #to print every row to diffrent files based on the first colum.
+awk '{if($2<=500)print > "500L.txt";else print > "500G.txt"}' file1 #to print every row to diffrent files based on the second colum.
