@@ -1,13 +1,15 @@
+#########useful links#################
 https://github.com/mskcc
 https://github.com/d-j-e/SNPPar
 If you meet the problem "libgfortran.so.4: cannot open shared object file: No such file or directory", you may try 
-
+########useful installation############
 sudo add-apt-repository ppa:ubuntu-toolchain-r/test
 sudo apt-get update
 sudo apt-get install gcc-7 g++-7
 gcc-7 --version
 sudo apt-get install gfortran-7
 this works on ubutu16
-
+#######useful bash######################
 awk '{print > $1".txt"}' file1 #to print every row to diffrent files based on the first colum.
 awk '{if($2<=500)print > "500L.txt";else print > "500G.txt"}' file1 #to print every row to diffrent files based on the second colum.
+awk '{for(i=2; i<=NF; i++) print $1 "\t" $i > "column" i ".txt"}' file1 # print every column to files
