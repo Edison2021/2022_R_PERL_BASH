@@ -6,17 +6,17 @@
 
 library("caper")
 args = commandArgs(trailingOnly=TRUE)
+sink(file= args[5])
 dat <-read.table(args[1], sep = "\t", header =TRUE)
 tre<-read.tree(file= args[2])
 #tre <-read.nexus(args[2])
-D <- comparative.data(phy = tre, data = dat, names.col = Binomial, vcv = TRUE, na.omit = FALSE, warn.dropped = TRUE)
-result <-phylo.d(data=D, binvar = Nocturnal, permut = 1000)
+D <- comparative.data(phy = tre, data = dat, names.col = Species, vcv = TRUE, na.omit = FALSE, warn.dropped = TRUE)
+result <-phylo.d(data=D, binvar = trait, permut = 1000)
 print(result)
-
 #format
-#tre ((((((((Allenopithecus_nigroviridis:13.350134,(((((((Cercopithecus_ascanius:2.108541
+#tre ((((((((Allenopithecus_nigroviridis:13.350134,(((((((Cercopithecus_ascanius:2.108541.....
 #dat 
 #Order   Family  Binomial        Nocturnal
 #Primates        Aotidae Aotus_trivirgatus       1
 #Primates        Atelidae        Ateles_belzebuth        0
- 
+
