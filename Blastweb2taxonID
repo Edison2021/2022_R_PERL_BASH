@@ -8,7 +8,7 @@ for file in xx*; do
    newName=$(egrep -o 'Query[a-zA-Z0-9_.-]*$' $file)
    mv $file $newName.0.txt
    tail -n +8 $newName.0.txt|awk '($11<=0.001)'   |awk '{print $2}' >$newName.pr.txt
-   fgrep -f $newName.pr.txt ~/src/prot.accession2taxid.FULL|awk '{print $2}' |sort  |uniq -c  |awk '{print $2}' >$newName.pr2taxid.txt
+   LC_ALL=C fgrep -f $newName.pr.txt ~/src/prot.accession2taxid.FULL|awk '{print $2}' |sort  |uniq -c  |awk '{print $2}' >$newName.pr2taxid.txt
 done
 rm *.0.txt *.pr.txt
 
