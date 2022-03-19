@@ -12,3 +12,17 @@ for file in xx*; do
 done
 rm *.0.txt *.pr.txt
 
+##############verison2##############
+# the diffrent version blast may cause diffrent output format;input is a file incude the alingment seq that downlaoed from blastp webserver
+sed 's/Query #/Query#/g' $1>0.tmp
+csplit -z 0.tmp  /Query#/ '{*}'
+for file in xx*; do
+sed '/Alignments/,$d' $file>$file.1.tmp
+tail -n +6 $file.1.tmp>$file.2.tmp  
+sed -i '/^$/d' $file.2.tmp
+#rm last seven columns and print the last colunm 
+awk '{NF-=7}1' $file.2.tmp  |awk '{print $NF}'|sort | uniq -c | awk '{print $2}'>$file.3.tmp
+newName=$(head -n 1  $file| awk '{print $2}')
+mv $file.3.tmp $newName.taxid.txt
+done
+rm *.tmp  xx*
