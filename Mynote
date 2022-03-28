@@ -13,3 +13,5 @@ this works on ubutu16
 awk '{print > $1".txt"}' file1 #to print every row to diffrent files based on the first colum.
 awk '{if($2<=500)print > "500L.txt";else print > "500G.txt"}' file1 #to print every row to diffrent files based on the second colum.
 awk '{for(i=2; i<=NF; i++) print $1 "\t" $i > "column" i ".txt"}' file1 # print every column to files
+awk '{ for(i=2; i<=268;i++) j+=$i; print $1 "\t"j ;j=0 }' file1 sum every row
+
