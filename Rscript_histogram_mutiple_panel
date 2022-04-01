@@ -1,0 +1,52 @@
+#!/usr/bin/env Rscript
+args = commandArgs(trailingOnly=TRUE)
+library(ggplot2)
+library(gridExtra)
+df1<-read.table(args[1], header=T)
+df2<-read.table(args[2], header=T)
+df3<-read.table(args[3], header=T)
+df4<-read.table(args[4], header=T)
+df5<-read.table(args[5], header=T)
+df6<-read.table(args[6], header=T)
+df7<-read.table(args[7], header=T)
+df8<-read.table(args[8], header=T)
+df9<-read.table(args[9], header=T)
+df10<-read.table(args[10], header=T)
+df11<-read.table(args[11], header=T)
+df12<-read.table(args[12], header=T)
+df13<-read.table(args[13], header=T)
+df14<-read.table(args[14], header=T)
+df15<-read.table(args[15], header=T)
+df16<-read.table(args[16], header=T)
+df17<-read.table(args[17], header=T)
+
+pdf("test1.pdf")
+p1<-ggplot(df1, aes(GROUP, SNP)) + geom_bar(aes(fill = Color), position = "dodge", stat="identity") + theme(axis.text.x = element_text(size = 6))  + theme(axis.title.x=element_blank(), axis.text.x=element_blank(), axis.ticks.x=element_blank())
+p2<-ggplot(df2, aes(GROUP, SNP)) + geom_bar(aes(fill = Color), position = "dodge", stat="identity") + theme(axis.text.x = element_text(size = 6))  + theme(axis.title.x=element_blank(), axis.text.x=element_blank(), axis.ticks.x=element_blank())
+p3<-ggplot(df3, aes(GROUP, SNP)) + geom_bar(aes(fill = Color), position = "dodge", stat="identity") + theme(axis.text.x = element_text(size = 6))  + theme(axis.title.x=element_blank(), axis.text.x=element_blank(), axis.ticks.x=element_blank())
+p4<-ggplot(df4, aes(GROUP, SNP)) + geom_bar(aes(fill = Color), position = "dodge", stat="identity") + theme(axis.text.x = element_text(size = 6))  + theme(axis.title.x=element_blank(), axis.text.x=element_blank(), axis.ticks.x=element_blank())
+p5<-ggplot(df5, aes(GROUP, SNP)) + geom_bar(aes(fill = Color), position = "dodge", stat="identity") + theme(axis.text.x = element_text(size = 6))  + theme(axis.title.x=element_blank(), axis.text.x=element_blank(), axis.ticks.x=element_blank())
+p6<-ggplot(df6, aes(GROUP, SNP)) + geom_bar(aes(fill = Color), position = "dodge", stat="identity") + theme(axis.text.x = element_text(size = 6))  + theme(axis.title.x=element_blank(), axis.text.x=element_blank(), axis.ticks.x=element_blank())
+p7<-ggplot(df7, aes(GROUP, SNP)) + geom_bar(aes(fill = Color), position = "dodge", stat="identity") + theme(axis.text.x = element_text(size = 6))  + theme(axis.title.x=element_blank(), axis.text.x=element_blank(), axis.ticks.x=element_blank())
+p8<-ggplot(df8, aes(GROUP, SNP)) + geom_bar(aes(fill = Color), position = "dodge", stat="identity") + theme(axis.text.x = element_text(size = 6))  + theme(axis.title.x=element_blank(), axis.text.x=element_blank(), axis.ticks.x=element_blank())
+p9<-ggplot(df9, aes(GROUP, SNP)) + geom_bar(aes(fill = Color), position = "dodge", stat="identity") + theme(axis.text.x = element_text(size = 6))  + theme(axis.title.x=element_blank(), axis.text.x=element_blank(), axis.ticks.x=element_blank())
+p10<-ggplot(df10, aes(GROUP, SNP)) + geom_bar(aes(fill = Color), position = "dodge", stat="identity") + theme(axis.text.x = element_text(size = 6))  + theme(axis.title.x=element_blank(), axis.text.x=element_blank(), axis.ticks.x=element_blank())
+p11<-ggplot(df11, aes(GROUP, SNP)) + geom_bar(aes(fill = Color), position = "dodge", stat="identity") + theme(axis.text.x = element_text(size = 6))  + theme(axis.title.x=element_blank(), axis.text.x=element_blank(), axis.ticks.x=element_blank())
+p12<-ggplot(df12, aes(GROUP, SNP)) + geom_bar(aes(fill = Color), position = "dodge", stat="identity") + theme(axis.text.x = element_text(size = 6))  + theme(axis.title.x=element_blank(), axis.text.x=element_blank(), axis.ticks.x=element_blank()) 
+p13<-ggplot(df13, aes(GROUP, SNP)) + geom_bar(aes(fill = Color), position = "dodge", stat="identity") + theme(axis.text.x = element_text(size = 6))  + theme(axis.title.x=element_blank(), axis.text.x=element_blank(), axis.ticks.x=element_blank())
+p14<-ggplot(df14, aes(GROUP, SNP)) + geom_bar(aes(fill = Color), position = "dodge", stat="identity") + theme(axis.text.x = element_text(size = 6))  + theme(axis.title.x=element_blank(), axis.text.x=element_blank(), axis.ticks.x=element_blank())
+p15<-ggplot(df15, aes(GROUP, SNP)) + geom_bar(aes(fill = Color), position = "dodge", stat="identity") + theme(axis.text.x = element_text(size = 6))  + theme(axis.title.x=element_blank(), axis.text.x=element_blank(), axis.ticks.x=element_blank())
+p16<-ggplot(df16, aes(GROUP, SNP)) + geom_bar(aes(fill = Color), position = "dodge", stat="identity") + theme(axis.text.x = element_text(size = 6))  + theme(axis.title.x=element_blank(), axis.text.x=element_blank(), axis.ticks.x=element_blank())
+p17<-ggplot(df17, aes(GROUP, SNP)) + geom_bar(aes(fill = Color), position = "dodge", stat="identity") + theme(axis.text.x = element_text(size = 6))  + theme(axis.title.x=element_blank(), axis.text.x=element_blank(), axis.ticks.x=element_blank())
+
+grid.arrange(p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17, ncol=2)
+
+dev.off()
+##############
+#SNP	GROUP Color
+#28.15156804	L1 B
+#34.08938724	L2 B
+#8.745080892	L3 B
+#16.86710409	L4 B
+#15.11001983	L5 B
+################
