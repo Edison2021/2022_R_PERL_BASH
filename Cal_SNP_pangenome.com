@@ -1,4 +1,5 @@
-# $1 is snp gene; $2 is roary absence presence martix; change 2917 based on how mnay isolations you have; $3 is aa seq in a genome; $4 is job name
+# $1 is snp/mutated genes, if a gene have 2 mutation, the gene must appear twice in the file; $2 is roary absence presence martix; this table has the infromation 
+# how many islations have the gene; change 2917 based on isolations you have; $3 is aa seq in a genome; $4 is job name
 echo "calculating mutated genes classes"
 ~/src/genome/match.listorder.pl $2 $1 | awk -F '\t' '{print $1 "\t" $4/2917}'   >$1.fre.txt
 echo "calculating gene length"
