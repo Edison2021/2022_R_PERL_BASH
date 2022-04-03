@@ -23,4 +23,5 @@ plot(crlg)
 #note: only continuous traits data allowed.
 #K < 1, the evolution of traits is independent of the phylogeny, and when K > 1 they are dependent of the phylogeny, any large value possible
 #λ = 0 indicating no phylogenetic signal, 1 indicating a strong phylogenetic signal, value falls bwtween 0~1
-#
+#I equals 0, species resemble each other as much as predicted under a brownian motion model. <0, less than predicted under a brownian motion model.
+#> 0, closely related species are more similar. Cmean simlar to I value
