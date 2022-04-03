@@ -13,11 +13,14 @@ phyloSignal(p4d = p4d, method = "all")
 crlg <- phyloCorrelogram(p4d, trait = "glu")
 plot(crlg)
 ##############
-Inputformat
-nwk format is tree without bootstrap
-table format
-Species trait1 trait2 trait3
-S1 2 3 4
-S2 5 6 7
-S3 8 9 01
-note: only continuous traits data allowed.
+#Inputformat
+#nwk format is tree without bootstrap
+#table format
+#Species trait1 trait2 trait3
+#S1 2 3 4
+#S2 5 6 7
+#S3 8 9 01
+#note: only continuous traits data allowed.
+#K < 1, the evolution of traits is independent of the phylogeny, and when K > 1 they are dependent of the phylogeny, any large value possible
+#λ = 0 indicating no phylogenetic signal, 1 indicating a strong phylogenetic signal, value falls bwtween 0~1
+#
