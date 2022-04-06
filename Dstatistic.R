@@ -17,8 +17,8 @@ print(result)
 #format
 #tre ((((((((Allenopithecus_nigroviridis:13.350134,(((((((Cercopithecus_ascanius:2.108541.....
 #dat 
-#Order   Family  Binomial        Nocturnal
-#Primates        Aotidae Aotus_trivirgatus       1
+#Order           Family          Binomial           Nocturnal
+#Primates        Aotidae         Aotus_trivirgatus       1
 #Primates        Atelidae        Ateles_belzebuth        0
 #Pval1: A p value, giving the result of testing whether D is significantly different from one, such as Probability of E(D) resulting from no (random) phylogenetic structure
 #Pval0: A p value, giving the result of testing whether D is significantly different from zero
