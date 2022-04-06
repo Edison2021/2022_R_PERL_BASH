@@ -39,7 +39,7 @@ p <- ggtree(tree) + geom_tiplab() +  ggtree::vexpand(.2, -1) +  ggtree::hexpand(
 
 pdf(outFile)
 
-phylogenyPlot <- gheatmap(p, geneSummary, font.size = as.numeric(args$f),hjust=1, colnames_angle = 45) + scale_fill_continuous(low = "#FFCCCC", high = "#9999FF")
+phylogenyPlot <- gheatmap(p, geneSummary, font.size = as.numeric(args$f),hjust=1, colnames_angle = 45) + scale_fill_continuous(low = "#2166AC", high = "#B2182B")
 print(phylogenyPlot)
 dev.off()
 
