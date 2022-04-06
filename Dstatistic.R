@@ -1,6 +1,6 @@
 #!/usr/bin/env Rscript
 #D = 1 if the distribution of the binary trait is random with respect to phylogeny, and >1 if the distribution of the trait is more overdispersed than the random expectation.D = 0 if the binary trait is distributed as expected under the Brownian motion model of evolution, and <0 if the binary trait is more phylogenetically conserved than the Brownian expectation.
-# $1 is trait table;$2 is tre file; tree can not have bootstrap;names.col is species name column;binvar is trait column.
+# $1 is trait table;$2 is tre file; tree can not have bootstrap and three length for tips shoule be >0;names.col is species name column;binvar is trait column.
 # only for binary trait
 # usage Rscript Dstatistic.R 1.tab 1.nwk Biomial(species header) Nocturnal(trait header)
 
