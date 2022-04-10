@@ -1,4 +1,4 @@
-# $1 is nex tree, very traditional version and must have translate line; $2 is data no title; $3 is command file
+# $1 is nex rooted tree, very traditional version and must have translate line; $2 is data no title; $3 is command file
 # Set lambda =1 (la 1) mimic Brownian motion, 1.0 is a default indicate closer species have large correlation. type 'la' for estimated lambda; 'la 0' to set to zero. You need to compare two comparisons, 1 vs estimated; estimated vs zero; but version 4 seems not support zero.
 # use t-distribution to calculate the P-value =TDIS(Beta_value/SD,df,2) 2 means two tail, df=N-k. In this case, df=sample number - 3
 # If you only have two traits, you may choose the random walk model
