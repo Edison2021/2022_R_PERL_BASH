@@ -3,3 +3,4 @@
 # use t-distribution to calculate the P-value =TDIS(Beta_value/SD,df,2) 2 means two tail, df=N-k. In this case, df=sample number - 3
 # If you only have two traits, you may choose the random walk model
 /home/manager/src/BayesTraitsV3.0.1-Linux/BayesTraitsV3 $1 $2 < ~/src/command_PGLS.txt
+~/src/command_PGLS.txt file incudes: 6 \n 1 \n la \n run
