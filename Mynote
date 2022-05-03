@@ -1,6 +1,7 @@
 #########useful links#################
 https://github.com/mskcc
 https://github.com/d-j-e/SNPPar
+https://hpc.nih.gov/training/gatk_tutorial/vqsr.html#benchmarks-of-applyvqsr
 ########useful installation############
 If you meet the problem "libgfortran.so.4: cannot open shared object file: No such file or directory", you may try 
 sudo add-apt-repository ppa:ubuntu-toolchain-r/test
