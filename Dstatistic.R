@@ -7,6 +7,7 @@
 
 library("caper")
 args = commandArgs(trailingOnly=TRUE)
+#sink: Send R Output to a File
 sink(file= args[5])
 dat <-read.table(args[1], sep = "\t", header =TRUE)
 tre<-read.tree(file= args[2])
