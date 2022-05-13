@@ -10,6 +10,11 @@ sudo apt-get install gcc-7 g++-7
 gcc-7 --version
 sudo apt-get install gfortran-7
 this works on ubutu16
+how to conda in grid
+1. srun -p prip -t 1:0:0 --mem=20G --pty bash
+2. conda create --name prokka
+3. conda activate prokka
+4. conda install -c conda-forge -c bioconda -c defaults prokka.
 #######useful bash######################
 awk '{print > $1".txt"}' file1 #to print every row to diffrent files based on the first colum.
 awk '{if($2<=500)print > "500L.txt";else print > "500G.txt"}' file1 #to print every row to diffrent files based on the second colum.
