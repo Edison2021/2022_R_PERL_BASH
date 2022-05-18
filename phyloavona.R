@@ -1,4 +1,4 @@
-#the inputable :first cell is must empty
+# the inputable :first cell is must empty
 # will test if the group is associated with trait 
 library(phytools)
 library(geiger)
