@@ -3,12 +3,12 @@
 # $1 is trait table;$2 is tre file; tree can not have bootstrap and three length for tips shoule be >0;names.col is species name column;binvar is trait column.
 # only for binary trait
 # p-value outpout first line D is significantly from 1 and second line D is significantly from (D = 0).
-# usage Rscript Dstatistic.R 1.tab 1.nwk ; you need to change names.col and binvar for your own data; Biomial(=Species) Nocturnal(=trait)
+# usage Rscript Dstatistic.R 1.tab 1.nwk outputname.txt; you need to change names.col and binvar for your own data; Biomial(=Species) Nocturnal(=trait)
 
 library("caper")
 args = commandArgs(trailingOnly=TRUE)
 #sink: Send R Output to a File
-sink(file= args[5])
+sink(file= args[3])
 dat <-read.table(args[1], sep = "\t", header =TRUE)
 tre<-read.tree(file= args[2])
 #tre <-read.nexus(args[2])
