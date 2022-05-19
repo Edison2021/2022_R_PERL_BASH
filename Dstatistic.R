@@ -23,3 +23,6 @@ print(result)
 #Primates        Atelidae        Ateles_belzebuth        0
 #Pval1: A p value, giving the result of testing whether D is significantly different from one, such as Probability of E(D) resulting from no (random) phylogenetic structure
 #Pval0: A p value, giving the result of testing whether D is significantly different from zero
+#Probability of E(D) resulting from no (random) phylogenetic structure :  0
+#Probability of E(D) resulting from Brownian phylogenetic structure    :  0.98
+# D is significantly < 1 but not significantly different from the Brownian expectation (D = 0).
