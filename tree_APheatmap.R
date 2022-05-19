@@ -1,5 +1,6 @@
 #Plots a presence absence heatmap for a given set of genes given a tree
 #usage Rscript tree_APheatmap.R -t N13.nwk  -g total.1.matrix.txt.tr.txt -s gene.list -o test.pdf
+# use the gene list to adjust the selected gene to map
 # adjust the ggtree::vexpand to control margin 
 # the first cell must be "Gene" in the dataframe, see line 32
 # use csvtk convert format
