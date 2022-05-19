@@ -26,3 +26,6 @@ print(result)
 #Probability of E(D) resulting from no (random) phylogenetic structure :  0
 #Probability of E(D) resulting from Brownian phylogenetic structure    :  0.98
 # D is significantly < 1 but not significantly different from the Brownian expectation (D = 0).
+# D typically varies between 0 and 1. A D of 0 indicates that a trait evolves on a tree following the Brownian model (strong phylogenetic signal), 
+# and a D of 1 indicates that a trait evolves following a random model (no phylogenetic signal). 
+# D can be negative, which means that a trait evolves more conserved than predicted by the Brownian model.
