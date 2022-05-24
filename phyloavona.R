@@ -1,4 +1,5 @@
 # the inputable :first cell is must empty
+# order is important for both tree and matrix
 # will test if the group is associated with trait 
 library(phytools)
 library(geiger)
