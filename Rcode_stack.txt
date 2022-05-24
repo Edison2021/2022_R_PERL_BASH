@@ -1,0 +1,14 @@
+> data<-read.table("stackplot.txt",header=T)
+> head (data)
+  Ty n.l value
+1  A   N     2
+2  A   L     2
+3  B   N     7
+4  B   L     0
+5  C   N     3
+6  C   L     3
+> library(ggplot2)
+Keep up to date with changes at https://www.tidyverse.org/blog/
+> pdf("stack.pdf")
+> ggplot(data, aes(fill=Ty, y=value, x=n.l)) +geom_bar(position="fill", stat="identity")
+> dev.off()
