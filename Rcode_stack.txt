@@ -8,7 +8,6 @@
 5  C   N     3
 6  C   L     3
 > library(ggplot2)
-Keep up to date with changes at https://www.tidyverse.org/blog/
 > pdf("stack.pdf")
 > ggplot(data, aes(fill=Ty, y=value, x=n.l)) +geom_bar(position="fill", stat="identity")
 > dev.off()
