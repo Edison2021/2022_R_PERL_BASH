@@ -1,4 +1,5 @@
 #$1 is tre; $2 is dat
+# demo http://www.francoiskeck.fr/phylosignal/demo_plots.html
 #!/usr/bin/env Rscript
 args = commandArgs(trailingOnly=TRUE)
 library(phylosignal)
