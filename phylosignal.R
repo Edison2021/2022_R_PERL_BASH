@@ -1,3 +1,4 @@
+#$1 is tre; $2 is dat
 #!/usr/bin/env Rscript
 args = commandArgs(trailingOnly=TRUE)
 library(phylosignal)
@@ -8,8 +9,11 @@ p4d<-read.p4d(args[1],args[2],phylo.format="newick",data.format="table")
 #barplot.phylo4d(p4d, tree.type = "phylo", tree.ladderize = TRUE)
 #barplot(p4d, tree.type = "fan", tip.cex = 0.6, tree.open.angle = 160, trait.cex = 0.6)
 #barplot(p4d, trait.bg.col = c("#F6CED8", "#CED8F6", "#CEF6CE"), bar.col = "grey35")
-barplot(p4d, center= FALSE, trait.bg.col = c("#F6CED8", "#CED8F6", "#CEF6CE"), bar.col = "grey35")
+# this will plot the traits
+barplot(p4d, center= FALSE, trait.bg.col = c("#F6CED8", "#CED8F6", "#CEF6CE","#"), bar.col = "grey35")
+# this will calcualte signal
 phyloSignal(p4d = p4d, method = "all")
+# this will plot correaltion for "glu" trait
 crlg <- phyloCorrelogram(p4d, trait = "glu")
 plot(crlg)
 ##############
