@@ -1,4 +1,5 @@
 #!/usr/bin/perl
+# replace the name using the new name; replace.pl $1(files containing the old the name) and $2 (a table old names \t new name)
 ($file,$tmp)=@ARGV;
 $i=0;
 open(TMP,"$tmp")||die"can't open the file $tmp\n";
