@@ -11,6 +11,8 @@ p4d<-read.p4d(args[1],args[2],phylo.format="newick",data.format="table")
 #barplot(p4d, tree.type = "fan", tip.cex = 0.6, tree.open.angle = 160, trait.cex = 0.6)
 #barplot(p4d, trait.bg.col = c("#F6CED8", "#CED8F6", "#CEF6CE"), bar.col = "grey35")
 # this will plot the traits
+#If center is TRUE then centering is done by subtracting the column means (omitting NAs) of x from their corresponding columns.
+#If scale is TRUE then scaling is done by dividing the (centered) columns of x by their standard deviations if center is TRUE, and the root mean square otherwise. 
 #barplot(p4d, center= FALSE, trait.bg.col = c("#F6CED8", "#CED8F6", "#CEF6CE","#FFE5CC"), bar.col = "grey35")
 barplot(p4d, trait.bg.col = c("#F6CED8", "#CED8F6", "#CEF6CE","#FFE5CC"), bar.col = "grey35")
 # this will calcualte signal
