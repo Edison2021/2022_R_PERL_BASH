@@ -15,3 +15,8 @@ rm 1.tmp *.fg
 
 #cat *.meanw.txt |awk '{print $2}' >$3.txt
 rm *.fg.*
+
+#format
+env	type	order	evo.block	seqd	founder	founder.ab	pop.no	old.nf	gfp	rep	well	matching.ref	status	in.ex	re.pop.no	pop.founder	cons.founder	re.popID	re.nfID	new.ID	evo.well	fit.well	no.days	d1.total	d1.nfcount	d1.nf	d1.gfpcount	d1.gfp	d1.total.1	d2.nfcount	d2.nf	d2.gfpcount	d2.gfp	m.evo	m.anc	w
+gal	evo	88	galA	ns	15929	29	137	29-1	300	1	H04	DEAD	Dead	Exclude	137	Dead	15929	15929-1	29-1	GalA-29-1	H04	H04	1	5000	91	0.0182	4909	0.9818	5000	181	0.0362	4819	0.9638	5.29280771073707	4.58666636857037	1.15395524448987
+gal	evo	184	galA	ns	15929	29	137	29-1	300	2	H04	DEAD	Dead	Exclude	137	Dead	15929	15929-1	29-1	GalA-29-1
