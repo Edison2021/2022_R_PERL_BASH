@@ -1,0 +1,12 @@
+# this will plot as input order
+
+pheatmap(test, number_format ="%s", cluster_rows = FALSE, cluster_cols = FALSE, display_numbers = TRUE,number_color = "blue")
+
+# first cell is empty
+##          Test6      Test9    Test4        Test10
+## Gene1 3.602764  1.2903843 2.044119  1.826159e+00
+## Gene2 3.083160  0.2642755 2.855381  1.988289e-01
+## Gene3 3.417809 -0.1362079 3.858884 -8.390304e-01
+## Gene4 2.911934  0.4299550 4.128398 -3.011521e+00
+## Gene5 2.651758 -1.6884728 3.001079  1.861780e+00
+## Gene6 1.934270  0.5811059 2.297763  6.878644e-05
