@@ -1,4 +1,5 @@
 #$1 is the sorted presence list in a genome; $2 is sorted total presecne in all genomes; this scripst constrcut the AP martrix
+#only for one by one species and finally paste by
 comm -12 $1 $2 >1.tmp
 awk '{print $1 "\t" "1"}' 1.tmp >sh.list 
 #paste 1.tmp 1.tmp >sh.list
