@@ -24,4 +24,4 @@ awk '{split($0,a);asort(a);mid=int(NF/2);NF%2!=0?median=a[mid+1]:median=(a[mid]+
 sed -n 'ADDRESS'p filename or sed -n '/PATTERN/p' filename # print lines address is number line; pattern is a text word
 sed -i  ':a;N;$!ba;s/\n/_/g' # change newline to underline
 sed 's/\(.*\)_/\1 /' # replace the last dash
-sed '1 i\ # insert before first line
+sed -i '1 i\anything' # insert before first line
