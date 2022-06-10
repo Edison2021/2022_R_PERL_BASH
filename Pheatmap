@@ -1,5 +1,6 @@
 # this will plot as input order
-
+library(pheatmap)
+test<-read.table("test".header=T)
 pheatmap(test, number_format ="%s", cluster_rows = FALSE, cluster_cols = FALSE, display_numbers = TRUE,number_color = "blue")
 
 # first cell is empty
