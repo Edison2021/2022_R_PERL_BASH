@@ -25,5 +25,5 @@ sed -n 'ADDRESS'p filename or sed -n '/PATTERN/p' filename # print lines address
 sed -i  ':a;N;$!ba;s/\n/_/g' # change newline to underline
 sed 's/\(.*\)_/\1 /' # replace the last dash
 sed  -i '1i text' filename # insert before first line
-for f in *.gal; do ~/src/create_APmatrix_copyformat.com $f toal.OG.list.re; sed -i '1i '$f' \t '$f'' $f.ok; done
+for f in *.gal; do ~/src/create_APmatrix_copyformat.com $f toal.OG.list.re; sed -i '1i '$f' \t '$f'' $f.ok; done # create copy number
 
