@@ -7,6 +7,7 @@ df<-read.table(args[1])
 library(ggplot2)
 pdf(args[2])
 # change ncol to set columns
+# switcch position="fill" to position="stack" that will show number not percentage
 ggplot(df, aes(fill=V1, y=V2, x=V3)) +geom_bar(position="fill", stat="identity")+facet_wrap(~V4, ncol=6)
 dev.off()
 #format
