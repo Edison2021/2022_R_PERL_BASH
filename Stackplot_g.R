@@ -6,7 +6,8 @@ df<-read.table(args[1])
 #df<-read.table(args[1], header=T)
 library(ggplot2)
 pdf(args[2])
-ggplot(df, aes(fill=V1, y=V2, x=V3)) +geom_bar(position="fill", stat="identity")+facet_wrap(~V4)
+# change ncol to set columns
+ggplot(df, aes(fill=V1, y=V2, x=V3)) +geom_bar(position="fill", stat="identity")+facet_wrap(~V4, ncol=6)
 dev.off()
 #format
 #mutation_type value conditon species
