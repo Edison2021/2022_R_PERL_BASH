@@ -4,17 +4,17 @@ library(ggplot2)
 library(ggpubr)
 data("ToothGrowth")
 # Box plot facetted by "dose"
-p <- ggpaired(ToothGrowth, x = "supp", y = "len", color = "supp", palette = "jco",  line.color = "gray", line.size = 0.4, facet.by = "dose", short.panel.labs = FALSE)+ facet_wrap(~group)
+p <- ggpaired(ToothGrowth, x = "supp", y = "len", color = "supp", palette = "jco",  line.color = "gray", line.size = 0.4, facet.by = "dose", short.panel.labs = FALSE)
 # Use only p.format as label. Remove method name.
 p + stat_compare_means(label = "p.format", paired = TRUE)
 p + stat_compare_means(label = "p.format", paired = TRUE, methods="")
 
 #format is very important and the order is very important, R can not automatcillay recinizie the type
 #right one
-26.7	VC	2 group1
-21.5	VC	2 group1
-15.2	OJ	0.5 group2
-21.5	OJ	0.5 group2
+26.7	VC	2
+21.5	VC	2
+15.2	OJ	0.5
+21.5	OJ	0.5
 #you can not mix bad one
 26.7    VC      2
 15.2    OJ      0.5
