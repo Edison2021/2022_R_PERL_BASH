@@ -8,14 +8,13 @@ model.pgls<-pgls(GestationLen_d ~ AdultBodyMass_g, data = primate, lambda ='ML')
 # a ~b+c to add variables
 summary(model.pgls)
 #If you get an error related to optimization, you may need to adjust the bounds on the search of the maximum likelihood space. chnage the bound for three paramters
-# 
-model.pgls<-pgls(GestationLen_d ~ AdultBodyMass_g, data = primate, lambda ="ML", bounds = list(lambda=c(0.001,1), kappa=c(1e-6,3), delta=c(1e-6,3)))
+# model.pgls<-pgls(GestationLen_d ~ AdultBodyMass_g, data = primate, lambda ="ML", bounds = list(lambda=c(0.001,1), kappa=c(1e-6,3), delta=c(1e-6,3)))
 
 par(mfrow=c(2,2))#so you can see all 4 plots at once
 plot(model.pgls)
-par(mfrow=c(1,1))#to reset the graphic window to just one graph
 
-#1) No studentised model residuals >±3. Any species with such large residuals should be removed. These outliers may overly influence the results of the regression.
+
+#1) No studentised model residuals >Â±3. Any species with such large residuals should be removed. These outliers may overly influence the results of the regression.
 
 #2) The points of the Q-Q plot should approximately form a straight line (rather than a banana shape).
 
