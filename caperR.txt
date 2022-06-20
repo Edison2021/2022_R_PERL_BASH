@@ -13,6 +13,8 @@ summary(model.pgls)
 par(mfrow=c(2,2))#so you can see all 4 plots at once
 plot(model.pgls)
 
+m.profile <- pgls.profile(model.pgls, "lambda")
+plot(m.profile)
 
 #1) No studentised model residuals >±3. Any species with such large residuals should be removed. These outliers may overly influence the results of the regression.
 
