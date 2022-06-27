@@ -30,3 +30,5 @@ for f in *.gal; do ~/src/create_APmatrix_copyformat.com $f toal.OG.list.re; sed 
 sed 'p;p;p;p' $1 # will repeat the lines five times
 sed '/^##FASTA/Q' w.gff > nosequence.gff # remove contig sequences
 sed -ne '/pattern/,$ p' # print all lines after matched pattern
+###########useful R############
+aggregate(d$auc_e, list(d$ST), mean) # calcualte mean (d$auc_e) based on the group (d$ST)
