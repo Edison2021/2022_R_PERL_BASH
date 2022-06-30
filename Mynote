@@ -35,3 +35,4 @@ awk '{sum = 0; for (i = 1; i <= NF; i++) sum += $i; sum /= NF; print sum}' # cal
 
 ###########useful R############
 aggregate(d$auc_e, list(d$ST), mean) # calcualte mean (d$auc_e) based on the group (d$ST)
+g <- ggplot(plot.df, aes(x=as.factor(type), y=w, group=nf)) + geom_boxplot(aes(fill=type, nf)) + facet_wrap(~founder, nrow=6, ncol=5, scales="free") + xlab("Competitors (by founder)") + ylab("Relative fitness") + theme(axis.text.x = element_text(angle = 45, hjust = 1, size = 8)) # boxplot
