@@ -1,5 +1,5 @@
 #$1 is all list; $2 is the w cal file;$3 is job name
-#updated the all list to all strains
+#updated the all list to all strains this will take founder effect as founder effect * reletvie fitness
 ~/src/filter_cal.com $2
 awk '($37>0)' $2.flt|grep 'evo'  | grep 'Good' | grep 'Include' |awk '{print $20 "\t" "G"$18 "\t" $37 "\t" $4}' >1.tmp
 awk '($37>0)' $2.flt|grep 'founder'  | grep 'Good' | grep 'Include' |awk '{print $20 "\t" "G"$18 "\t" $37 "\t" $4}' >0.tmp
