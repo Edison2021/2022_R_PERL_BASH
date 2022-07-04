@@ -12,7 +12,7 @@ awk '{k=$1=$1; sub(k,x); A[k]=A[k] $0} END{for(i in A)print i A[i]}' 2.tmp|sed '
 awk '{print $1}' 3.tmp >3.1.tmp
 cut -f 2- 3.tmp  | awk '{sum = 0; for (i = 1; i <= NF; i++) sum += $i; sum /= NF; print sum}'  >4.tmp
 paste 3.1.tmp 4.tmp >$f.meanw.txt
-~/src/replace.pl $f.meanw.txt 2.2.tmp |sed 's/_/\t/g' |  awk '{print $2 "\t" $1*$3}' >$f.meanw.0.txt
+~/src/replace.pl $f.meanw.txt 2.2.tmp |sed 's/_/\t/g' |  awk '{print $2 "\t" $1*(1/$3)}' >$f.meanw.0.txt
 rm 2.tmp 3.tmp 3.1.tmp 4.tmp 2.1.tmp 2.2.tmp 
 done
 rm 1.tmp *.fg 0.tmp 
