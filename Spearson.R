@@ -1,0 +1,5 @@
+library("ggpubr")
+dat<-read.table("Spearman_plot2.txt",header=T)
+pdf("sperman.pdf")
+ggscatter(dat, x = "gal_i", y = "gal_e", add = "reg.line", cor.coef = TRUE, cor.method = "spearman", fill="env",shape=21, szie=5, palette = c(gal= "black", glu = "red", gly = "orange", sor="blue"))
+dev.off()
