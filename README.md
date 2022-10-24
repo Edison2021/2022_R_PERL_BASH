@@ -13,4 +13,8 @@ The scripts with AAconv are for convegent mutations at nucletides level
 
 #############
 
+auto_createAPmatrix can generate the matrix for convergent genes
+
+#############
+
 These scripts were used for E coli mutation
